@@ -7,7 +7,11 @@ const PORT= process.env.PORT || 8000;
 const movieRouter=require("./routes/movie");
 const userRouter=require("./routes/user");
 
-
+// $ git init
+// // $ heroku git:remote -a myflix-apibypiyush
+// $ git add .
+// $ git commit -am "make it better"
+// $ git push heroku master
 //express object
 const app=express();
 
