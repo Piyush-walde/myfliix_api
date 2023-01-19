@@ -27,11 +27,17 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to the mongo server
-mongoose.connect("mongodb+srv://pwalde:PiyushWalde@cluster0.z6uso.mongodb.net/batch_8_movies_p")
+// mongoose.connect("mongodb+srv://pwalde:PiyushWalde@cluster0.z6uso.mongodb.net/batch_8_movies_p")
+mongoose.connect("mongodb+srv://amanbodele:Aman123@cluster0.fx54iua.mongodb.net/?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 .then(()=>{
     console.log("connection to mongo successful");
 })
-
+app.get('/', (req, res) => {
+    res.send('<h1>API for MovieFlix</h1>');
+});
 
 // if any request come /movies please tranfer it to movieRouter
 app.use("/movies",movieRouter);
