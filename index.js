@@ -28,7 +28,7 @@ app.use(cors());
 
 // Connect to the mongo server
 // mongoose.connect("mongodb+srv://pwalde:PiyushWalde@cluster0.z6uso.mongodb.net/batch_8_movies_p")
-mongoose.connect("mongodb+srv://amanbodele:Aman123@cluster0.fx54iua.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://pwalde:PiyushWalde@cluster0.z6uso.mongodb.net/batch_8_movies_p", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
