@@ -7,10 +7,10 @@ const PORT= process.env.PORT || 8000;
 const movieRouter=require("./routes/movie");
 const userRouter=require("./routes/user");
 
-Header()
-header.Add("Access-Control-Allow-Origin", "*")
-header.Add("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS")
-header.Add("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
+// Header()
+// header.Add("Access-Control-Allow-Origin", "*")
+// header.Add("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS")
+// header.Add("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
 
 // $ git init
 // // $ heroku git:remote -a myflix-apibypiyush
